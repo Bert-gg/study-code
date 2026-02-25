@@ -41,9 +41,10 @@ int main(void)
             {
                 printf("|   ");
             }
+            printf("| %d\n", i);
         }
         // rank numbering right
-        printf("| %d\n", i);
+        
     }
 
     // Border on bottom
