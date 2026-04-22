@@ -285,11 +285,10 @@ Reuse your work from the previous sections to process such frames.
 
 #### Requirements
 
-- Create at least two fixed-size arrays that represent sensor frames
-- Transfer the frame data into `std::vector`
-- Analyze the resulting vectors with your functions from Part A
-
----
+- Create at one fixed-size array that represents a sensor frame
+- Write a generic function that transfers the frame data into a `std::vector`
+- Do not use any size parameter for the array
+- Analyze the resulting vector with your functions from Part A
 
 ### Part C: Status Stream Specialization
 
@@ -303,6 +302,8 @@ For such data, the generic numeric analysis is not meaningful.
 
 Implement a **template specialization** for one of your generic analysis functions so that boolean status streams are evaluated differently.
 
+Test your template specialization with a boolean vector of your choice.
+
 #### Required rule
 
 For `bool`, your specialized function shall return:
@@ -315,52 +316,3 @@ For `bool`, your specialized function shall return:
 In your program output, clearly explain what the boolean result means, for example:
 
 - `Motor was active for most of the test run: true`
-
-#### Context
-
-This is the key place where template specialization is necessary:
-boolean state data must be interpreted differently from numeric sensor data.
-
----
-
-### Part D: Black Box Report
-
-Create a final report for all datasets.
-
-Your program must process at least:
-
-- one integer dataset
-- one double dataset
-- one boolean dataset
-- one fixed-size sensor frame that is converted into a vector
-
-For each dataset, print:
-
-- a title
-- the raw data
-- the processed / analyzed results
-- a short interpretation of the result
-
-#### Example ideas for dataset names
-
-- Motor temperature log
-- Battery voltage log
-- GPS lock state log
-- Vibration frame A
-
----
-
-### Part E: Integration Requirements
-
-Your final solution must clearly reuse ideas from earlier tasks.
-
-#### Requirements
-
-- Reuse or adapt your earlier generic print logic
-- Reuse or adapt your fixed-size array logic
-- Use `std::vector` for flexible analysis
-- Use iterators or STL algorithms explicitly
-- Use template specialization for boolean data
-- Keep the program modular with multiple functions
-
----
