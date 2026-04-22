@@ -27,15 +27,28 @@ void swap(T &firstValue, T &secondValue)
 // 3. Only instantiated when used so it can potentially reduce the binary size of the exe
 // 4. Templates are perfect for reusability since each type can be used as long as the operations are defined.
 
-template <typename T>
-void printFrame(T frame, int size)
+/* Commented out below is the solution of the printFrame before task5 is implemented
+/* template <typename T>
+/* void printFrame(T frame, int size)
+/* {
+/*    std::cout << "[";
+/*    for (int i = 0; i < size - 1; i++)
+/*    {
+/*        std::cout << frame[i] << ", ";
+/*    }
+/*    std::cout << frame[size - 1] << "]" << '\n';
+/*}
+*/
+
+template <int N, typename T>
+void printFrame(T frame)
 {
     std::cout << "[";
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < N - 1; i++)
     {
         std::cout << frame[i] << ", ";
     }
-    std::cout << frame[size - 1] << "]" << '\n';
+    std::cout << frame[N - 1] << "]" << '\n';
 }
 
 template <typename T>

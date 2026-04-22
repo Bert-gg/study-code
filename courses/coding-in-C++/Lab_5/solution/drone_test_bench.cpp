@@ -10,7 +10,7 @@ int main()
         std::cout << "Error: SIZE is zero or negative." << std::endl;
         return 1;
     }
-    printFrame(testFrame, SIZE);
+    printFrame<SIZE>(testFrame);
     std::cout << min(testFrame, SIZE) << std::endl;
     composeTags("Channel", "motor_temp", "Priority", 4);
 
