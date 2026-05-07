@@ -1,4 +1,4 @@
-# Lab 2: From C to C++
+# Lab 2: Basics of OOP
 
 This lab focuses on the basics of object-oriented programming in C++ including UML class and object diagrams.
 
@@ -350,7 +350,7 @@ A cinema manages movies, customers, and tickets.
 2. For each class:
    - Define **attributes with visibility and data types**
    - Include at least:
-     - one **static attribute**
+     - one **static attribute** or
      - one **derived attribute**
 
 3. Define fitting **methods (operations)**:
